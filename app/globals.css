@@ -13,6 +13,7 @@
     display: flex;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 
     & > main{
         flex: 1;
@@ -20,9 +21,10 @@
         position: relative;
         display: grid;
         grid-template-columns: 1fr minmax(auto, 820px) 1fr;
+        overflow-y: auto;
 
         & .hamburger.nav{
-            position: absolute;
+            position: fixed;
             top: 1.5rem;
             left: 1.5rem;
             display: block;
@@ -38,6 +40,7 @@
         & section {
             padding: 2rem;
             min-height: 100vh;
+            margin-bottom: 8rem;
 
             & article {
                 margin-top: 4rem;
